@@ -1,0 +1,28 @@
+-Importing Sample Data into DB using XAMPP-
+
+https://www.youtube.com/watch?v=kQSFOhaMss0
+
+Instead, I literally extracted test_db-master into E:\xampp\mysql\bin and ran this line in XAMPP shell script...
+
+mysql -u root -p test < employees.sql
+
+
+
+
+
+-How am I going to use PHP and AJAX to get this stuff?-
+
+
+JavaScript: Call to a HTTP Request to 
+
+a PHP file that will retrieve the data.
+
+
+Loop this php line
+	$array = mysql_fetch_row($result);  
+, creating an array of row arrays. Then json_encode the final array.
+
+NEXT
+
+Use ajax to populate jQuery dataTable!
+
